@@ -1,0 +1,137 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/icons for icons options
+
+title: "Welcome home, captain."
+subtitle: "Calypso - 192.168.68.132"
+#logo: "assets/tools/sample.png"
+icon: "fas fa-cloud-moon" # Optional icon
+
+header: true
+footer: false #'<p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">bulma</a>, <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/">font awesome</a> // Fork me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>' # set false if you want to hide it.
+# Optional theme customization
+theme: default
+colors:
+  light:
+    highlight-primary: "#FFFFFF"
+    highlight-secondary: "#FFFFFF"
+    highlight-hover: "#1061B4"
+    background: "#F2F2F7"
+    card-background: "#FFFFFF"
+    text: "#363636"
+    text-header: "#303030"
+    text-title: "#303030"
+    text-subtitle: "#424242"
+    card-shadow: 
+    link: "#3273dc"
+    link-hover: "#363636"
+  dark:
+    highlight-primary: "#000000"
+    highlight-secondary: "#1C1C1E"
+    highlight-hover: "#1061B4"
+    background: "#000000"
+    card-background: "#1C1C1E"
+    text: "#eaeaea"
+    text-header: "#ffffff"
+    text-title: "#fafafa"
+    text-subtitle: "#f5f5f5"
+    card-shadow: 
+    link: "#3273dc"
+    link-hover: "#f92aad"
+
+# Optional message
+#message:
+  url: https://b4bz.io
+  style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
+  title: "Demo !"
+  icon: "fa fa-grin"
+  content: "This is a dummy homepage demo. <br /> Find more information on <a href='https://github.com/bastienwirtz/homer'>github.com/bastienwirtz/homer</a>"
+
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+links:
+  - name: "Server Status"
+    icon: "fas fa-server"
+    url: "https://192.168.68.132:9090/system"
+    target: "_blank" # optional html a tag target attribute
+
+  - name: "NetData"
+    icon: "fas fa-server"
+    url: "http://192.168.68.132:19999/"
+    target: "_blank" # optional html a tag target attribute
+
+# Services
+# First level array represent a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+services:
+  - name: "Media"
+    icon: "fas fa-film"
+    items:
+      - name: "Plex"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Plex_favicon.png"
+        subtitle: ""
+        tag: "media"
+        url: "http://192.168.68.132:32400/"
+        target: "_blank" # optional html a tag target attribute
+      - name: "Jellyfin"
+        logo: "https://developer.asustor.com/uploadIcons/0020_999_1568614440_Jellyfin_256.png"
+        subtitle: ""
+        tag: "media"
+        url: "http://192.168.68.132:8096/"
+      - name: "Ombi"
+        logo: "https://avatars.githubusercontent.com/u/51722903?v=4"
+        subtitle: ""
+        tag: "media"
+        url: "http://192.168.68.132:3579/"
+      - name: "Radarr"
+        logo: "https://wiki.servarr.com/assets/radarr/logos/128.png"
+        subtitle: ""
+        tag: "media"
+        url: "http://192.168.68.132:7878/"
+        target: "_blank" # optional html a tag target attribute
+      - name: "Sonarr"
+        logo: "https://wiki.servarr.com/assets/sonarr/logos/128.png"
+        subtitle: ""
+        tag: "media"
+        url: "http://192.168.68.132:8989/"
+  - name: "Home & Security"
+    icon: "fas fa-home"
+    items:
+      - name: "Home Assistant"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/1200px-Home_Assistant_Logo.svg.png"
+        subtitle: ""
+        tag: "homeassistant"
+        url: "http://192.168.68.132:8123/"
+        target: "_blank" # optional html a tag target attribute
+      - name: "MotionEye"
+        logo: "https://brands.home-assistant.io/_/motioneye/logo.png"
+        subtitle: ""
+        tag: "security"
+        url: "http://192.168.68.132:8765/"
+  - name: "Tools"
+    icon: "fas fa-wrench"
+    items:
+      - name: "Portainer"
+        logo: "https://linuxnewbieguide.org/wp-content/uploads/2017/12/portainerlogo-1.png"
+        tag: "docker"
+        url: "http://192.168.68.132:9000/#!/home"
+      - name: "Tautulli"
+        logo: "https://tautulli.com/images/logo-circle.png"
+        subtitle: ""
+        tag: "statistics"
+        url: "http://192.168.68.132:8181/"
+      - name: "Prowlarr"
+        logo: "https://wiki.servarr.com/assets/prowlarr/logos/128.png"
+        subtitle: ""
+        tag: "indexers"
+        url: "http://192.168.68.132:40311/"
+      - name: "Bazarr"
+        logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bazarr.png"
+        subtitle: ""
+        tag: "subtitles"
+        url: "http://192.168.68.132:6767/"
+      - name: "qBitTorrent"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/6/66/New_qBittorrent_Logo.svg"
+        subtitle: ""
+        tag: "torrenting"
+        url: "http://192.168.68.132:8111/"
